@@ -1,0 +1,71 @@
+/* BOMPA REMUS 342C4 */
+
+- pentru reprezentarea atomilor, am folosit reprezentarea din laboratorul 5: tupluri avand
+ca prin element numele tipului (Constant, Var, Fun, Atom, Neg, And, Or) iar ca al doilea
+element valoarea simbolului (valoarea in cazul constantei, numele variabilei) sau un 
+tuplu in cazul in care sibolul ia argumente (cazul functie, atomului, and si or)
+-am folosit functii de creare formule (make), de verificare formule (is), de extragere valoare,
+nume, head (tip), argumente, inlocuire argumente, de afisare formula in format lizibil (
+print_formula)
+-pentru unificarea a doua formule am folosit functia unify:
+- compara fiecare subformula din cadrul formulei: daca formulele au argumente compara header,
+simbol (functie/ predicat) si apoi argumentele pe rand (sunt puse in stiva perechile de 
+argumente), daca se ajunge la 2 constante diferite se opreste (intoarce False), daca se ajunge
+la 2 variabile cea din formula a 2-a va indica catre cea din prima formula, iar daca se ajunge
+la o variabila si o formula (variabila nu se gaseste in fomula, verificare folosind 
+occur_check), variabila va fi substituita cu formula
+- intoarce substitutia construita subst prin efect lateral
+- deoarece variabilele din a 2-a formula vor fi intotdeauna diferite de cele din prima
+formula (a 2-a formula este un fapt, variabilele nu sunt instantiate), daca se ajunge la
+o variabila din a 2-a formula, aceasta va fi prefixata cu PREFIX_VAR = "prefix_". Acest prefix
+va disparea la apelul substitutie, cand cele care impreuna cu prefixul nu se gasesc in
+substitutie vor fi pastrate fara prefix.
+- intoarce ca rezultat substitutia gasita pentru variabilele din prima formula (data ca 
+parametru): pentru fiecare variabila din setul de variabile a primei formule se aplica
+functia substf1_not_in_f2, care intoarce o formula formata numai din constante sau None daca
+s-a ajuns la o formula ce contine cel putin o variabila.
+-cele 2 rezultate vor fi folosite:
+	*) subst e folosita pentru a substitui formula a 2-a (concluzia/faptul gasit) cu variabile
+	din prima formula (teorema, premisa) si constante
+	*)subst_f1 (rezultatul) e folosit pentru a updata dictionarul de substitutii 
+	(new_subst.update(crt_subst)), astfel incat sa se tina evidenta variabilelor substituite
+	din fiecare teorema/premisa
+	
+- faptele sunt organizate intr-un dictionar list_facts avand dret cheie predicatul atomului.
+Valoarea unei chei este o lista de atomi avand predicatul respectiv. Aceasta organizare ajuta
+la cautarea eficienta a unei fapte care sa unifice cu teorema (trebuie sa aiba acelasi predicat)
+
+-citirea din fisier s-a facut parsand fiecare linie in functie de gramatica data, folosind o 
+stiva din care se pun sau se scot, se unesc si se pun termeni in functie de tipul de paranteza
+la care s-a ajuns sau de caracterul la care s-a ajuns. Faptele se pun in dictionarul de fapte
+list_facts, regulile in lista list_rules, interogarile in lista list_quries iar coeficientii
+in dictionarul dict_coef avand drept chei fapte/reguli.
+ 
+- am implementat functiile get, compute_triangle, getShortest, getMiddle, getLongest, 
+compute_Pitagoras astfel incat primesc siruri si intorc sir (cazul get) sau int (cazul 
+celorlalte). Am folosit 2 dictionare:
+	- dict_fct de la numele functiei la functie (folosit la parsare, pentru a fi folosit
+	apoi la evaluare)
+	-dict_name_fct de la functie la numele functiei( folosit la apelul funtiei print_formula
+	folosind functia lambda prFormula, astfel se va afisa numele functiei)
+- functia evaluate evalueaza o functie din interiorul formulei: oafiseaza si o inlocuieste
+cu o constanta daca toate argumentele ei sunt constante, sau intoarce False
+
+Backward chaining:
+- foloseste apelul recursiv al functiei backward_chaining pornind de la substitutia crt_subst
+pentru a demonstra teorema theorem
+- se verifica mai intai daca teorema unifica cu un fapt
+- se incearca apoi fiecare regula a carei concluzie unifica cu teorema si se incearca unificarea
+premiselor pornind de la substitutia concluziei cu teorema, apeland get_subst_bkt
+- get_subst_bkt are ca paramentru un indice i ca reprezinta numarul premisei la care s-a 
+ajuns si incearca fiecare fapt ce unifica cu premisa. Pentru fiecare astfel de fapt, se 
+continua cu un nou apel recursiv cu indicele i+1, avand noua substitutie (new_subst) si 
+minimul new_min_coef al coeficientilor de incredere a premiselor pana acum. In cazul in care
+o premisa nu reuseste sa unifice cu niciun fapt, se incearca demonstrarea acesteia apeland
+backward_chaining cu premises[i] ca teorema iar in cazul in care apelul reuseste, se mai
+incearca odata unificarea premisei (se apeleaza get_subst_bkt cu aceeasi parametri)
+- cand se ajunge la finalul premiselor (i == len(premises)), se adauga faptul gasit 
+(found_fact) la lista de fapte (facts), se calculeaza coeficientul solutiei coef, se adauga
+solutia si coeficientul in lista de solutii list_sol. se adauga found_fact in dictionarul
+de coeficienti dict_coef avand valoare coef.
+ 

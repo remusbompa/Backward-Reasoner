@@ -1,0 +1,487 @@
+List facts:
+['P48(2367)', 'P48(182)', 'P48(1011)', 'P48(956)', 'P48(4)', 'P11(488)', 'P11(182)', 'P11(4)', 'P6(2350)', 'P6(2279)', 'P6(182)', 'P6(4)', 'P6(2311)', 'P38(524)', 'P38(182)', 'P38(4)', 'P47(2879, 1830, 1636)', 'P47(4, 7, 10)', 'P47(182, 363, 544)', 'P63(1591, 407)', 'P63(182, 363)', 'P63(4, 7)', 'P63(1150, 2350)', 'P63(2237, 2369)', 'P63(657, 2552)', 'P26(1518, 1819, 721)', 'P26(2926, 1714, 2161)', 'P26(300, 1790, 2285)', 'P26(182, 363, 544)', 'P26(2962, 2757, 1368)', 'P26(4, 7, 10)', 'P26(2020, 1861, 560)', 'P21(4, 7, 10)', 'P21(182, 363, 544)', 'P16(2920)', 'P16(2037)', 'P16(182)', 'P16(4)', 'P16(2045)', 'P16(818)', 'P14(182, 363)', 'P14(268, 748)', 'P14(578, 2699)', 'P14(4, 7)', 'P58(1082, 861)', 'P58(1928, 2155)', 'P58(182, 363)', 'P58(4, 7)', 'P58(601, 540)', 'P58(1938, 198)', 'P58(2544, 161)', 'P53(182)', 'P53(2792)', 'P53(4)', 'P53(783)', 'P53(2022)', 'P53(541)', 'P53(1042)', 'P55(2466, 238, 242)', 'P55(182, 363, 544)', 'P55(4, 7, 10)', 'P37(4)', 'P37(182)', 'P4(2595, 2338, 1815)', 'P4(741, 773, 2373)', 'P4(4, 7, 10)', 'P4(182, 363, 544)', 'P4(2973, 2590, 1532)', 'P4(2976, 1351, 427)', 'P54(182)', 'P54(4)', 'P42(2646, 2608, 879)', 'P42(168, 2383, 736)', 'P42(4, 7, 10)', 'P42(182, 363, 544)', 'P20(182, 363, 544)', 'P20(4, 7, 10)', 'P28(1477)', 'P28(1722)', 'P28(2640)', 'P28(4)', 'P28(182)', 'P30(182, 363, 544)', 'P30(976, 1537, 417)', 'P30(4, 7, 10)', 'P10(4)', 'P10(182)', 'P18(182, 363, 544)', 'P18(527, 623, 2076)', 'P18(4, 7, 10)', 'P18(768, 149, 836)', 'P18(1685, 247, 690)', 'P8(489, 922)', 'P8(4, 7)', 'P8(182, 363)', 'P8(1468, 2364)', 'P8(1233, 2494)', 'P44(2763, 2357, 61)', 'P44(4, 7, 10)', 'P44(182, 363, 544)', 'P44(356, 1173, 2257)', 'P32(4, 7)', 'P32(827, 795)', 'P32(182, 363)', 'P35(2651, 622, 2638)', 'P35(182, 363, 544)', 'P35(4, 7, 10)', 'P17(1350)', 'P17(2519)', 'P17(182)', 'P17(4)', 'P9(182, 363)', 'P9(258, 1261)', 'P9(4, 7)', 'P40(182, 363, 544)', 'P40(1734, 1973, 2464)', 'P40(4, 7, 10)', 'P40(549, 400, 158)', 'P40(2044, 153, 550)', 'P62(195, 369)', 'P62(4, 7)', 'P62(1158, 2630)', 'P62(182, 363)', 'P62(2638, 1063)', 'P24(1842, 2058)', 'P24(4, 7)', 'P24(1024, 1958)', 'P24(182, 363)', 'P27(4)', 'P27(182)', 'P27(1078)', 'P27(1410)', 'P46(4)', 'P46(182)', 'P46(2373)', 'P46(1961)', 'P23(1990, 2500, 2896)', 'P23(1134, 2745, 2572)', 'P23(97, 2960, 2095)', 'P23(2667, 2721, 538)', 'P23(4, 7, 10)', 'P23(182, 363, 544)', 'P25(182, 363, 544)', 'P25(4, 7, 10)', 'P25(2049, 477, 940)', 'P25(2430, 1484, 278)', 'P25(613, 170, 116)', 'P25(2999, 471, 149)', 'P25(521, 893, 1346)', 'P56(4)', 'P56(182)', 'P60(4, 7)', 'P60(9, 2673)', 'P60(182, 363)', 'P3(4)', 'P3(2920)', 'P3(182)', 'P3(2443)', 'P57(182, 363, 544)', 'P57(4, 7, 10)', 'P57(354, 1261, 365)', 'P50(182, 363)', 'P50(1745, 775)', 'P50(4, 7)', 'P49(4, 7)', 'P49(182, 363)', 'P51(4, 7)', 'P51(1822, 288)', 'P51(182, 363)', 'P51(2347, 550)', 'P61(4)', 'P61(1549)', 'P61(1735)', 'P61(2600)', 'P61(182)', 'P61(2077)', 'P36(182, 363)', 'P36(4, 7)', 'P36(2406, 3000)', 'P36(1062, 2313)', 'P36(1948, 4)', 'P5(264, 1484, 2795)', 'P5(182, 363, 544)', 'P5(2478, 2337, 1042)', 'P5(4, 7, 10)', 'P39(4)', 'P39(182)', 'P15(653, 658, 158)', 'P15(2328, 2641, 459)', 'P15(2877, 2545, 2186)', 'P15(4, 7, 10)', 'P15(182, 363, 544)', 'P15(592, 1331, 1903)', 'P15(1806, 467, 1334)']
+
+List rules:
+['(V ~P1(?x0) ~P12(?x0, ?x1) ~P33(?x0, ?x1, ?x2) ~P63(?x0, ?x1) P0(?x0))', '(V ~P2(?x0) ~P6(?x0) ~P7(?x0, ?x1) P1(?x0))', '(V ~P3(?x0) ~P4(?x0, ?x1, ?x2) ~P5(?x0, ?x1, ?x2) P2(?x0))', '(V ~P8(?x0, ?x1) ~P9(?x0, ?x1) ~P10(?x0) ~P11(?x0) P7(?x0, ?x1))', '(V ~P13(?x0, ?x1) ~P19(?x0, ?x1, ?x2) ~P21(?x0, ?x1, ?x2) ~P22(?x0, ?x1, ?x2) ~P29(?x0, ?x1, ?x2) ~P31(?x0, ?x1) P12(?x0, ?x1))', '(V ~P14(?x0, ?x1) ~P15(?x0, ?x1, ?x2) ~P16(?x0) ~P17(?x0) ~P18(?x0, ?x1, ?x2) P13(?x0, ?x1))', '(V ~P20(?x0, ?x1, ?x2) P19(?x0, ?x1, ?x2))', '(V ~P23(?x0, ?x1, ?x2) ~P24(?x0, ?x1) ~P25(?x0, ?x1, ?x2) ~P26(?x0, ?x1, ?x2) ~P27(?x0) ~P28(?x0) P22(?x0, ?x1, ?x2))', '(V ~P30(?x0, ?x1, ?x2) P29(?x0, ?x1, ?x2))', '(V ~P32(?x0, ?x1) P31(?x0, ?x1))', '(V ~P34(?x0, ?x1, ?x2) ~P41(?x0, ?x1, ?x2) ~P43(?x0, ?x1, ?x2) ~P45(?x0) ~P52(?x0) ~P59(?x0, ?x1) P33(?x0, ?x1, ?x2))', '(V ~P35(?x0, ?x1, ?x2) ~P36(?x0, ?x1) ~P37(?x0) ~P38(?x0) ~P39(?x0) ~P40(?x0, ?x1, ?x2) P34(?x0, ?x1, ?x2))', '(V ~P42(?x0, ?x1, ?x2) P41(?x0, ?x1, ?x2))', '(V ~P44(?x0, ?x1, ?x2) P43(?x0, ?x1, ?x2))', '(V ~P46(?x0) ~P47(?x0, ?x1, ?x2) ~P48(?x0) ~P49(?x0, ?x1) ~P50(?x0, ?x1) ~P51(?x0, ?x1) P45(?x0))', '(V ~P53(?x0) ~P54(?x0) ~P55(?x0, ?x1, ?x2) ~P56(?x0) ~P57(?x0, ?x1, ?x2) ~P58(?x0, ?x1) P52(?x0))', '(V ~P60(?x0, ?x1) ~P61(?x0) ~P62(?x0, ?x1) P59(?x0, ?x1))']
+
+List queries:
+['P0(4)', 'P0(182)', 'P0(21)', 'P0(?x0)']
+
+
+Scopuri de demonstrat: P0(4)
+  Incercam P0(4): P1(4), P12(4, ?x1), P33(4, ?x1, ?x2), P63(4, ?x1) % 1.0
+    Incercam P1(4): P2(4), P6(4), P7(4, ?x1) % 1.0
+      Incercam P2(4): P3(4), P4(4, ?x1, ?x2), P5(4, ?x1, ?x2) % 1.0
+        P3(4) % 1.0 este un fapt
+          P4(4, 7, 10) % 1.0 este un fapt
+            P5(4, 7, 10) % 1.0 este un fapt
+            Solutie: ?x1: 7, ?x2: 10 % 1.0
+      The theorem P2(4) is TRUE!
+      P2(4) % 1.0 este un fapt
+        P6(4) % 1.0 este un fapt
+          Incercam P7(4, ?x1): P8(4, ?x1), P9(4, ?x1), P10(4), P11(4) % 1.0
+            P8(4, 7) % 1.0 este un fapt
+              P9(4, 7) % 1.0 este un fapt
+                P10(4) % 1.0 este un fapt
+                  P11(4) % 1.0 este un fapt
+                  Solutie: ?x1: 7 % 1.0
+          The theorem P7(4, ?x1) is TRUE!
+          P7(4, 7) % 1.0 este un fapt
+          Solutie: ?x1: 7 % 1.0
+    The theorem P1(4) is TRUE!
+    P1(4) % 1.0 este un fapt
+      Incercam P12(4, ?x1): P13(4, ?x1), P19(4, ?x1, ?x2), P21(4, ?x1, ?x2), P22(4, ?x1, ?x2), P29(4, ?x1, ?x2), P31(4, ?x1) % 1.0
+        Incercam P13(4, ?x1): P14(4, ?x1), P15(4, ?x1, ?x2), P16(4), P17(4), P18(4, ?x1, ?x2) % 1.0
+          P14(4, 7) % 1.0 este un fapt
+            P15(4, 7, 10) % 1.0 este un fapt
+              P16(4) % 1.0 este un fapt
+                P17(4) % 1.0 este un fapt
+                  P18(4, 7, 10) % 1.0 este un fapt
+                  Solutie: ?x1: 7, ?x2: 10 % 1.0
+        The theorem P13(4, ?x1) is TRUE!
+        P13(4, 7) % 1.0 este un fapt
+          Incercam P19(4, 7, ?x2): P20(4, 7, ?x2) % 1.0
+            P20(4, 7, 10) % 1.0 este un fapt
+            Solutie: ?x2: 10 % 1.0
+          The theorem P19(4, 7, ?x2) is TRUE!
+          P19(4, 7, 10) % 1.0 este un fapt
+            P21(4, 7, 10) % 1.0 este un fapt
+              Incercam P22(4, 7, 10): P23(4, 7, 10), P24(4, 7), P25(4, 7, 10), P26(4, 7, 10), P27(4), P28(4) % 1.0
+                P23(4, 7, 10) % 1.0 este un fapt
+                  P24(4, 7) % 1.0 este un fapt
+                    P25(4, 7, 10) % 1.0 este un fapt
+                      P26(4, 7, 10) % 1.0 este un fapt
+                        P27(4) % 1.0 este un fapt
+                          P28(4) % 1.0 este un fapt
+                          Solutie: {} % 1.0
+              The theorem P22(4, 7, 10) is TRUE!
+              P22(4, 7, 10) % 1.0 este un fapt
+                Incercam P29(4, 7, 10): P30(4, 7, 10) % 1.0
+                  P30(4, 7, 10) % 1.0 este un fapt
+                  Solutie: {} % 1.0
+                The theorem P29(4, 7, 10) is TRUE!
+                P29(4, 7, 10) % 1.0 este un fapt
+                  Incercam P31(4, 7): P32(4, 7) % 1.0
+                    P32(4, 7) % 1.0 este un fapt
+                    Solutie: {} % 1.0
+                  The theorem P31(4, 7) is TRUE!
+                  P31(4, 7) % 1.0 este un fapt
+                  Solutie: ?x1: 7, ?x2: 10 % 1.0
+      The theorem P12(4, ?x1) is TRUE!
+      P12(4, 7) % 1.0 este un fapt
+        Incercam P33(4, 7, ?x2): P34(4, 7, ?x2), P41(4, 7, ?x2), P43(4, 7, ?x2), P45(4), P52(4), P59(4, 7) % 1.0
+          Incercam P34(4, 7, ?x2): P35(4, 7, ?x2), P36(4, 7), P37(4), P38(4), P39(4), P40(4, 7, ?x2) % 1.0
+            P35(4, 7, 10) % 1.0 este un fapt
+              P36(4, 7) % 1.0 este un fapt
+                P37(4) % 1.0 este un fapt
+                  P38(4) % 1.0 este un fapt
+                    P39(4) % 1.0 este un fapt
+                      P40(4, 7, 10) % 1.0 este un fapt
+                      Solutie: ?x2: 10 % 1.0
+          The theorem P34(4, 7, ?x2) is TRUE!
+          P34(4, 7, 10) % 1.0 este un fapt
+            Incercam P41(4, 7, 10): P42(4, 7, 10) % 1.0
+              P42(4, 7, 10) % 1.0 este un fapt
+              Solutie: {} % 1.0
+            The theorem P41(4, 7, 10) is TRUE!
+            P41(4, 7, 10) % 1.0 este un fapt
+              Incercam P43(4, 7, 10): P44(4, 7, 10) % 1.0
+                P44(4, 7, 10) % 1.0 este un fapt
+                Solutie: {} % 1.0
+              The theorem P43(4, 7, 10) is TRUE!
+              P43(4, 7, 10) % 1.0 este un fapt
+                Incercam P45(4): P46(4), P47(4, ?x1, ?x2), P48(4), P49(4, ?x1), P50(4, ?x1), P51(4, ?x1) % 1.0
+                  P46(4) % 1.0 este un fapt
+                    P47(4, 7, 10) % 1.0 este un fapt
+                      P48(4) % 1.0 este un fapt
+                        P49(4, 7) % 1.0 este un fapt
+                          P50(4, 7) % 1.0 este un fapt
+                            P51(4, 7) % 1.0 este un fapt
+                            Solutie: ?x1: 7, ?x2: 10 % 1.0
+                The theorem P45(4) is TRUE!
+                P45(4) % 1.0 este un fapt
+                  Incercam P52(4): P53(4), P54(4), P55(4, ?x1, ?x2), P56(4), P57(4, ?x1, ?x2), P58(4, ?x1) % 1.0
+                    P53(4) % 1.0 este un fapt
+                      P54(4) % 1.0 este un fapt
+                        P55(4, 7, 10) % 1.0 este un fapt
+                          P56(4) % 1.0 este un fapt
+                            P57(4, 7, 10) % 1.0 este un fapt
+                              P58(4, 7) % 1.0 este un fapt
+                              Solutie: ?x1: 7, ?x2: 10 % 1.0
+                  The theorem P52(4) is TRUE!
+                  P52(4) % 1.0 este un fapt
+                    Incercam P59(4, 7): P60(4, 7), P61(4), P62(4, 7) % 1.0
+                      P60(4, 7) % 1.0 este un fapt
+                        P61(4) % 1.0 este un fapt
+                          P62(4, 7) % 1.0 este un fapt
+                          Solutie: {} % 1.0
+                    The theorem P59(4, 7) is TRUE!
+                    P59(4, 7) % 1.0 este un fapt
+                    Solutie: ?x2: 10 % 1.0
+        The theorem P33(4, 7, ?x2) is TRUE!
+        P33(4, 7, 10) % 1.0 este un fapt
+          P63(4, 7) % 1.0 este un fapt
+          Solutie: ?x1: 7, ?x2: 10 % 1.0
+Gata.
+**The theorem P0(4) is TRUE! % 1.0
+{} % 1.0
+
+Scopuri de demonstrat: P0(182)
+  Incercam P0(182): P1(182), P12(182, ?x1), P33(182, ?x1, ?x2), P63(182, ?x1) % 1.0
+    Incercam P1(182): P2(182), P6(182), P7(182, ?x1) % 1.0
+      Incercam P2(182): P3(182), P4(182, ?x1, ?x2), P5(182, ?x1, ?x2) % 1.0
+        P3(182) % 1.0 este un fapt
+          P4(182, 363, 544) % 1.0 este un fapt
+            P5(182, 363, 544) % 1.0 este un fapt
+            Solutie: ?x1: 363, ?x2: 544 % 1.0
+      The theorem P2(182) is TRUE!
+      P2(182) % 1.0 este un fapt
+        P6(182) % 1.0 este un fapt
+          Incercam P7(182, ?x1): P8(182, ?x1), P9(182, ?x1), P10(182), P11(182) % 1.0
+            P8(182, 363) % 1.0 este un fapt
+              P9(182, 363) % 1.0 este un fapt
+                P10(182) % 1.0 este un fapt
+                  P11(182) % 1.0 este un fapt
+                  Solutie: ?x1: 363 % 1.0
+          The theorem P7(182, ?x1) is TRUE!
+          P7(182, 363) % 1.0 este un fapt
+          Solutie: ?x1: 363 % 1.0
+    The theorem P1(182) is TRUE!
+    P1(182) % 1.0 este un fapt
+      Incercam P12(182, ?x1): P13(182, ?x1), P19(182, ?x1, ?x2), P21(182, ?x1, ?x2), P22(182, ?x1, ?x2), P29(182, ?x1, ?x2), P31(182, ?x1) % 1.0
+        Incercam P13(182, ?x1): P14(182, ?x1), P15(182, ?x1, ?x2), P16(182), P17(182), P18(182, ?x1, ?x2) % 1.0
+          P14(182, 363) % 1.0 este un fapt
+            P15(182, 363, 544) % 1.0 este un fapt
+              P16(182) % 1.0 este un fapt
+                P17(182) % 1.0 este un fapt
+                  P18(182, 363, 544) % 1.0 este un fapt
+                  Solutie: ?x1: 363, ?x2: 544 % 1.0
+        The theorem P13(182, ?x1) is TRUE!
+        P13(182, 363) % 1.0 este un fapt
+          Incercam P19(182, 363, ?x2): P20(182, 363, ?x2) % 1.0
+            P20(182, 363, 544) % 1.0 este un fapt
+            Solutie: ?x2: 544 % 1.0
+          The theorem P19(182, 363, ?x2) is TRUE!
+          P19(182, 363, 544) % 1.0 este un fapt
+            P21(182, 363, 544) % 1.0 este un fapt
+              Incercam P22(182, 363, 544): P23(182, 363, 544), P24(182, 363), P25(182, 363, 544), P26(182, 363, 544), P27(182), P28(182) % 1.0
+                P23(182, 363, 544) % 1.0 este un fapt
+                  P24(182, 363) % 1.0 este un fapt
+                    P25(182, 363, 544) % 1.0 este un fapt
+                      P26(182, 363, 544) % 1.0 este un fapt
+                        P27(182) % 1.0 este un fapt
+                          P28(182) % 1.0 este un fapt
+                          Solutie: {} % 1.0
+              The theorem P22(182, 363, 544) is TRUE!
+              P22(182, 363, 544) % 1.0 este un fapt
+                Incercam P29(182, 363, 544): P30(182, 363, 544) % 1.0
+                  P30(182, 363, 544) % 1.0 este un fapt
+                  Solutie: {} % 1.0
+                The theorem P29(182, 363, 544) is TRUE!
+                P29(182, 363, 544) % 1.0 este un fapt
+                  Incercam P31(182, 363): P32(182, 363) % 1.0
+                    P32(182, 363) % 1.0 este un fapt
+                    Solutie: {} % 1.0
+                  The theorem P31(182, 363) is TRUE!
+                  P31(182, 363) % 1.0 este un fapt
+                  Solutie: ?x1: 363, ?x2: 544 % 1.0
+      The theorem P12(182, ?x1) is TRUE!
+      P12(182, 363) % 1.0 este un fapt
+        Incercam P33(182, 363, ?x2): P34(182, 363, ?x2), P41(182, 363, ?x2), P43(182, 363, ?x2), P45(182), P52(182), P59(182, 363) % 1.0
+          Incercam P34(182, 363, ?x2): P35(182, 363, ?x2), P36(182, 363), P37(182), P38(182), P39(182), P40(182, 363, ?x2) % 1.0
+            P35(182, 363, 544) % 1.0 este un fapt
+              P36(182, 363) % 1.0 este un fapt
+                P37(182) % 1.0 este un fapt
+                  P38(182) % 1.0 este un fapt
+                    P39(182) % 1.0 este un fapt
+                      P40(182, 363, 544) % 1.0 este un fapt
+                      Solutie: ?x2: 544 % 1.0
+          The theorem P34(182, 363, ?x2) is TRUE!
+          P34(182, 363, 544) % 1.0 este un fapt
+            Incercam P41(182, 363, 544): P42(182, 363, 544) % 1.0
+              P42(182, 363, 544) % 1.0 este un fapt
+              Solutie: {} % 1.0
+            The theorem P41(182, 363, 544) is TRUE!
+            P41(182, 363, 544) % 1.0 este un fapt
+              Incercam P43(182, 363, 544): P44(182, 363, 544) % 1.0
+                P44(182, 363, 544) % 1.0 este un fapt
+                Solutie: {} % 1.0
+              The theorem P43(182, 363, 544) is TRUE!
+              P43(182, 363, 544) % 1.0 este un fapt
+                Incercam P45(182): P46(182), P47(182, ?x1, ?x2), P48(182), P49(182, ?x1), P50(182, ?x1), P51(182, ?x1) % 1.0
+                  P46(182) % 1.0 este un fapt
+                    P47(182, 363, 544) % 1.0 este un fapt
+                      P48(182) % 1.0 este un fapt
+                        P49(182, 363) % 1.0 este un fapt
+                          P50(182, 363) % 1.0 este un fapt
+                            P51(182, 363) % 1.0 este un fapt
+                            Solutie: ?x1: 363, ?x2: 544 % 1.0
+                The theorem P45(182) is TRUE!
+                P45(182) % 1.0 este un fapt
+                  Incercam P52(182): P53(182), P54(182), P55(182, ?x1, ?x2), P56(182), P57(182, ?x1, ?x2), P58(182, ?x1) % 1.0
+                    P53(182) % 1.0 este un fapt
+                      P54(182) % 1.0 este un fapt
+                        P55(182, 363, 544) % 1.0 este un fapt
+                          P56(182) % 1.0 este un fapt
+                            P57(182, 363, 544) % 1.0 este un fapt
+                              P58(182, 363) % 1.0 este un fapt
+                              Solutie: ?x1: 363, ?x2: 544 % 1.0
+                  The theorem P52(182) is TRUE!
+                  P52(182) % 1.0 este un fapt
+                    Incercam P59(182, 363): P60(182, 363), P61(182), P62(182, 363) % 1.0
+                      P60(182, 363) % 1.0 este un fapt
+                        P61(182) % 1.0 este un fapt
+                          P62(182, 363) % 1.0 este un fapt
+                          Solutie: {} % 1.0
+                    The theorem P59(182, 363) is TRUE!
+                    P59(182, 363) % 1.0 este un fapt
+                    Solutie: ?x2: 544 % 1.0
+        The theorem P33(182, 363, ?x2) is TRUE!
+        P33(182, 363, 544) % 1.0 este un fapt
+          P63(182, 363) % 1.0 este un fapt
+          Solutie: ?x1: 363, ?x2: 544 % 1.0
+Gata.
+**The theorem P0(182) is TRUE! % 1.0
+{} % 1.0
+
+Scopuri de demonstrat: P0(21)
+  Incercam P0(21): P1(21), P12(21, ?x1), P33(21, ?x1, ?x2), P63(21, ?x1) % 1.0
+    Incercam P1(21): P2(21), P6(21), P7(21, ?x1) % 1.0
+      Incercam P2(21): P3(21), P4(21, ?x1, ?x2), P5(21, ?x1, ?x2) % 1.0
+        The theorem P3(21) is FALSE!
+      The theorem P2(21) is FALSE!
+    The theorem P1(21) is FALSE!
+Gata.
+**The theorem P0(21) is FALSE!
+
+Scopuri de demonstrat: P0(?x0)
+  Incercam P0(?x0): P1(?x0), P12(?x0, ?x1), P33(?x0, ?x1, ?x2), P63(?x0, ?x1) % 1.0
+    Incercam P1(?x0): P2(?x0), P6(?x0), P7(?x0, ?x1) % 1.0
+      Incercam P2(?x0): P3(?x0), P4(?x0, ?x1, ?x2), P5(?x0, ?x1, ?x2) % 1.0
+        P3(4) % 1.0 este un fapt
+          P4(4, 7, 10) % 1.0 este un fapt
+            P5(4, 7, 10) % 1.0 este un fapt
+            Solutie: ?x0: 4, ?x1: 7, ?x2: 10 % 1.0
+        P3(2920) % 1.0 este un fapt
+          The theorem P4(2920, ?x1, ?x2) is FALSE!
+        P3(182) % 1.0 este un fapt
+          P4(182, 363, 544) % 1.0 este un fapt
+            P5(182, 363, 544) % 1.0 este un fapt
+            Solutie: ?x0: 182, ?x1: 363, ?x2: 544 % 1.0
+        P3(2443) % 1.0 este un fapt
+          The theorem P4(2443, ?x1, ?x2) is FALSE!
+      The theorem P2(?x0) is TRUE!
+      P2(4) % 1.0 este un fapt
+        P6(4) % 1.0 este un fapt
+          Incercam P7(4, ?x1): P8(4, ?x1), P9(4, ?x1), P10(4), P11(4) % 1.0
+            P8(4, 7) % 1.0 este un fapt
+              P9(4, 7) % 1.0 este un fapt
+                P10(4) % 1.0 este un fapt
+                  P11(4) % 1.0 este un fapt
+                  Solutie: ?x1: 7 % 1.0
+          The theorem P7(4, ?x1) is TRUE!
+          P7(4, 7) % 1.0 este un fapt
+          Solutie: ?x0: 4, ?x1: 7 % 1.0
+      P2(182) % 1.0 este un fapt
+        P6(182) % 1.0 este un fapt
+          Incercam P7(182, ?x1): P8(182, ?x1), P9(182, ?x1), P10(182), P11(182) % 1.0
+            P8(182, 363) % 1.0 este un fapt
+              P9(182, 363) % 1.0 este un fapt
+                P10(182) % 1.0 este un fapt
+                  P11(182) % 1.0 este un fapt
+                  Solutie: ?x1: 363 % 1.0
+          The theorem P7(182, ?x1) is TRUE!
+          P7(182, 363) % 1.0 este un fapt
+          Solutie: ?x0: 182, ?x1: 363 % 1.0
+    The theorem P1(?x0) is TRUE!
+    P1(4) % 1.0 este un fapt
+      Incercam P12(4, ?x1): P13(4, ?x1), P19(4, ?x1, ?x2), P21(4, ?x1, ?x2), P22(4, ?x1, ?x2), P29(4, ?x1, ?x2), P31(4, ?x1) % 1.0
+        Incercam P13(4, ?x1): P14(4, ?x1), P15(4, ?x1, ?x2), P16(4), P17(4), P18(4, ?x1, ?x2) % 1.0
+          P14(4, 7) % 1.0 este un fapt
+            P15(4, 7, 10) % 1.0 este un fapt
+              P16(4) % 1.0 este un fapt
+                P17(4) % 1.0 este un fapt
+                  P18(4, 7, 10) % 1.0 este un fapt
+                  Solutie: ?x1: 7, ?x2: 10 % 1.0
+        The theorem P13(4, ?x1) is TRUE!
+        P13(4, 7) % 1.0 este un fapt
+          Incercam P19(4, 7, ?x2): P20(4, 7, ?x2) % 1.0
+            P20(4, 7, 10) % 1.0 este un fapt
+            Solutie: ?x2: 10 % 1.0
+          The theorem P19(4, 7, ?x2) is TRUE!
+          P19(4, 7, 10) % 1.0 este un fapt
+            P21(4, 7, 10) % 1.0 este un fapt
+              Incercam P22(4, 7, 10): P23(4, 7, 10), P24(4, 7), P25(4, 7, 10), P26(4, 7, 10), P27(4), P28(4) % 1.0
+                P23(4, 7, 10) % 1.0 este un fapt
+                  P24(4, 7) % 1.0 este un fapt
+                    P25(4, 7, 10) % 1.0 este un fapt
+                      P26(4, 7, 10) % 1.0 este un fapt
+                        P27(4) % 1.0 este un fapt
+                          P28(4) % 1.0 este un fapt
+                          Solutie: {} % 1.0
+              The theorem P22(4, 7, 10) is TRUE!
+              P22(4, 7, 10) % 1.0 este un fapt
+                Incercam P29(4, 7, 10): P30(4, 7, 10) % 1.0
+                  P30(4, 7, 10) % 1.0 este un fapt
+                  Solutie: {} % 1.0
+                The theorem P29(4, 7, 10) is TRUE!
+                P29(4, 7, 10) % 1.0 este un fapt
+                  Incercam P31(4, 7): P32(4, 7) % 1.0
+                    P32(4, 7) % 1.0 este un fapt
+                    Solutie: {} % 1.0
+                  The theorem P31(4, 7) is TRUE!
+                  P31(4, 7) % 1.0 este un fapt
+                  Solutie: ?x1: 7, ?x2: 10 % 1.0
+      The theorem P12(4, ?x1) is TRUE!
+      P12(4, 7) % 1.0 este un fapt
+        Incercam P33(4, 7, ?x2): P34(4, 7, ?x2), P41(4, 7, ?x2), P43(4, 7, ?x2), P45(4), P52(4), P59(4, 7) % 1.0
+          Incercam P34(4, 7, ?x2): P35(4, 7, ?x2), P36(4, 7), P37(4), P38(4), P39(4), P40(4, 7, ?x2) % 1.0
+            P35(4, 7, 10) % 1.0 este un fapt
+              P36(4, 7) % 1.0 este un fapt
+                P37(4) % 1.0 este un fapt
+                  P38(4) % 1.0 este un fapt
+                    P39(4) % 1.0 este un fapt
+                      P40(4, 7, 10) % 1.0 este un fapt
+                      Solutie: ?x2: 10 % 1.0
+          The theorem P34(4, 7, ?x2) is TRUE!
+          P34(4, 7, 10) % 1.0 este un fapt
+            Incercam P41(4, 7, 10): P42(4, 7, 10) % 1.0
+              P42(4, 7, 10) % 1.0 este un fapt
+              Solutie: {} % 1.0
+            The theorem P41(4, 7, 10) is TRUE!
+            P41(4, 7, 10) % 1.0 este un fapt
+              Incercam P43(4, 7, 10): P44(4, 7, 10) % 1.0
+                P44(4, 7, 10) % 1.0 este un fapt
+                Solutie: {} % 1.0
+              The theorem P43(4, 7, 10) is TRUE!
+              P43(4, 7, 10) % 1.0 este un fapt
+                Incercam P45(4): P46(4), P47(4, ?x1, ?x2), P48(4), P49(4, ?x1), P50(4, ?x1), P51(4, ?x1) % 1.0
+                  P46(4) % 1.0 este un fapt
+                    P47(4, 7, 10) % 1.0 este un fapt
+                      P48(4) % 1.0 este un fapt
+                        P49(4, 7) % 1.0 este un fapt
+                          P50(4, 7) % 1.0 este un fapt
+                            P51(4, 7) % 1.0 este un fapt
+                            Solutie: ?x1: 7, ?x2: 10 % 1.0
+                The theorem P45(4) is TRUE!
+                P45(4) % 1.0 este un fapt
+                  Incercam P52(4): P53(4), P54(4), P55(4, ?x1, ?x2), P56(4), P57(4, ?x1, ?x2), P58(4, ?x1) % 1.0
+                    P53(4) % 1.0 este un fapt
+                      P54(4) % 1.0 este un fapt
+                        P55(4, 7, 10) % 1.0 este un fapt
+                          P56(4) % 1.0 este un fapt
+                            P57(4, 7, 10) % 1.0 este un fapt
+                              P58(4, 7) % 1.0 este un fapt
+                              Solutie: ?x1: 7, ?x2: 10 % 1.0
+                  The theorem P52(4) is TRUE!
+                  P52(4) % 1.0 este un fapt
+                    Incercam P59(4, 7): P60(4, 7), P61(4), P62(4, 7) % 1.0
+                      P60(4, 7) % 1.0 este un fapt
+                        P61(4) % 1.0 este un fapt
+                          P62(4, 7) % 1.0 este un fapt
+                          Solutie: {} % 1.0
+                    The theorem P59(4, 7) is TRUE!
+                    P59(4, 7) % 1.0 este un fapt
+                    Solutie: ?x2: 10 % 1.0
+        The theorem P33(4, 7, ?x2) is TRUE!
+        P33(4, 7, 10) % 1.0 este un fapt
+          P63(4, 7) % 1.0 este un fapt
+          Solutie: ?x0: 4, ?x1: 7, ?x2: 10 % 1.0
+    P1(182) % 1.0 este un fapt
+      Incercam P12(182, ?x1): P13(182, ?x1), P19(182, ?x1, ?x2), P21(182, ?x1, ?x2), P22(182, ?x1, ?x2), P29(182, ?x1, ?x2), P31(182, ?x1) % 1.0
+        Incercam P13(182, ?x1): P14(182, ?x1), P15(182, ?x1, ?x2), P16(182), P17(182), P18(182, ?x1, ?x2) % 1.0
+          P14(182, 363) % 1.0 este un fapt
+            P15(182, 363, 544) % 1.0 este un fapt
+              P16(182) % 1.0 este un fapt
+                P17(182) % 1.0 este un fapt
+                  P18(182, 363, 544) % 1.0 este un fapt
+                  Solutie: ?x1: 363, ?x2: 544 % 1.0
+        The theorem P13(182, ?x1) is TRUE!
+        P13(182, 363) % 1.0 este un fapt
+          Incercam P19(182, 363, ?x2): P20(182, 363, ?x2) % 1.0
+            P20(182, 363, 544) % 1.0 este un fapt
+            Solutie: ?x2: 544 % 1.0
+          The theorem P19(182, 363, ?x2) is TRUE!
+          P19(182, 363, 544) % 1.0 este un fapt
+            P21(182, 363, 544) % 1.0 este un fapt
+              Incercam P22(182, 363, 544): P23(182, 363, 544), P24(182, 363), P25(182, 363, 544), P26(182, 363, 544), P27(182), P28(182) % 1.0
+                P23(182, 363, 544) % 1.0 este un fapt
+                  P24(182, 363) % 1.0 este un fapt
+                    P25(182, 363, 544) % 1.0 este un fapt
+                      P26(182, 363, 544) % 1.0 este un fapt
+                        P27(182) % 1.0 este un fapt
+                          P28(182) % 1.0 este un fapt
+                          Solutie: {} % 1.0
+              The theorem P22(182, 363, 544) is TRUE!
+              P22(182, 363, 544) % 1.0 este un fapt
+                Incercam P29(182, 363, 544): P30(182, 363, 544) % 1.0
+                  P30(182, 363, 544) % 1.0 este un fapt
+                  Solutie: {} % 1.0
+                The theorem P29(182, 363, 544) is TRUE!
+                P29(182, 363, 544) % 1.0 este un fapt
+                  Incercam P31(182, 363): P32(182, 363) % 1.0
+                    P32(182, 363) % 1.0 este un fapt
+                    Solutie: {} % 1.0
+                  The theorem P31(182, 363) is TRUE!
+                  P31(182, 363) % 1.0 este un fapt
+                  Solutie: ?x1: 363, ?x2: 544 % 1.0
+      The theorem P12(182, ?x1) is TRUE!
+      P12(182, 363) % 1.0 este un fapt
+        Incercam P33(182, 363, ?x2): P34(182, 363, ?x2), P41(182, 363, ?x2), P43(182, 363, ?x2), P45(182), P52(182), P59(182, 363) % 1.0
+          Incercam P34(182, 363, ?x2): P35(182, 363, ?x2), P36(182, 363), P37(182), P38(182), P39(182), P40(182, 363, ?x2) % 1.0
+            P35(182, 363, 544) % 1.0 este un fapt
+              P36(182, 363) % 1.0 este un fapt
+                P37(182) % 1.0 este un fapt
+                  P38(182) % 1.0 este un fapt
+                    P39(182) % 1.0 este un fapt
+                      P40(182, 363, 544) % 1.0 este un fapt
+                      Solutie: ?x2: 544 % 1.0
+          The theorem P34(182, 363, ?x2) is TRUE!
+          P34(182, 363, 544) % 1.0 este un fapt
+            Incercam P41(182, 363, 544): P42(182, 363, 544) % 1.0
+              P42(182, 363, 544) % 1.0 este un fapt
+              Solutie: {} % 1.0
+            The theorem P41(182, 363, 544) is TRUE!
+            P41(182, 363, 544) % 1.0 este un fapt
+              Incercam P43(182, 363, 544): P44(182, 363, 544) % 1.0
+                P44(182, 363, 544) % 1.0 este un fapt
+                Solutie: {} % 1.0
+              The theorem P43(182, 363, 544) is TRUE!
+              P43(182, 363, 544) % 1.0 este un fapt
+                Incercam P45(182): P46(182), P47(182, ?x1, ?x2), P48(182), P49(182, ?x1), P50(182, ?x1), P51(182, ?x1) % 1.0
+                  P46(182) % 1.0 este un fapt
+                    P47(182, 363, 544) % 1.0 este un fapt
+                      P48(182) % 1.0 este un fapt
+                        P49(182, 363) % 1.0 este un fapt
+                          P50(182, 363) % 1.0 este un fapt
+                            P51(182, 363) % 1.0 este un fapt
+                            Solutie: ?x1: 363, ?x2: 544 % 1.0
+                The theorem P45(182) is TRUE!
+                P45(182) % 1.0 este un fapt
+                  Incercam P52(182): P53(182), P54(182), P55(182, ?x1, ?x2), P56(182), P57(182, ?x1, ?x2), P58(182, ?x1) % 1.0
+                    P53(182) % 1.0 este un fapt
+                      P54(182) % 1.0 este un fapt
+                        P55(182, 363, 544) % 1.0 este un fapt
+                          P56(182) % 1.0 este un fapt
+                            P57(182, 363, 544) % 1.0 este un fapt
+                              P58(182, 363) % 1.0 este un fapt
+                              Solutie: ?x1: 363, ?x2: 544 % 1.0
+                  The theorem P52(182) is TRUE!
+                  P52(182) % 1.0 este un fapt
+                    Incercam P59(182, 363): P60(182, 363), P61(182), P62(182, 363) % 1.0
+                      P60(182, 363) % 1.0 este un fapt
+                        P61(182) % 1.0 este un fapt
+                          P62(182, 363) % 1.0 este un fapt
+                          Solutie: {} % 1.0
+                    The theorem P59(182, 363) is TRUE!
+                    P59(182, 363) % 1.0 este un fapt
+                    Solutie: ?x2: 544 % 1.0
+        The theorem P33(182, 363, ?x2) is TRUE!
+        P33(182, 363, 544) % 1.0 este un fapt
+          P63(182, 363) % 1.0 este un fapt
+          Solutie: ?x0: 182, ?x1: 363, ?x2: 544 % 1.0
+Gata.
+**The theorem P0(?x0) is TRUE! % 1.0
+?x0: 4 % 1.0
+?x0: 182 % 1.0
+

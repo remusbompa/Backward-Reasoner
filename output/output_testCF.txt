@@ -1,0 +1,70 @@
+List facts:
+['simptom(febra)', 'simptom(nasInfundat)', 'simptom(stareProasta)', 'simptom(durereBurta)']
+
+List rules:
+['(V ~simptom(stareProasta) diagnostic(viroza))', '(V ~simptom(febra) diagnostic(viroza))', '(V ~simptom(nasInfundat) infectie(respirator))', '(V ~simptom(durereBurta) infectie(digestiv))', '(V ~simptom(tulburariOculare) infectie(nervos))', '(V ~infectie(?Sistem) ~diagnostic(viroza) diagnosticViroza(?Sistem))']
+
+List queries:
+['diagnostic(viroza)', 'diagnosticViroza(respirator)', 'diagnosticViroza(digestiv)', 'diagnosticViroza(nervos)']
+
+
+Scopuri de demonstrat: diagnostic(viroza)
+  Incercam diagnostic(viroza): simptom(stareProasta) % 0.5
+    simptom(stareProasta) % 0.7 este un fapt
+    Solutie: {} % 0.35
+  Incercam diagnostic(viroza): simptom(febra) % 0.7
+    simptom(febra) % 1.0 este un fapt
+    Solutie: {} % 0.7
+Gata.
+**The theorem diagnostic(viroza) is TRUE! % 0.8049999999999998
+{} % 0.35
+{} % 0.7
+
+Scopuri de demonstrat: diagnosticViroza(respirator)
+  Incercam diagnosticViroza(respirator): infectie(respirator), diagnostic(viroza) % 0.9
+    Incercam infectie(respirator): simptom(nasInfundat) % 0.8
+      simptom(nasInfundat) % 0.9 este un fapt
+      Solutie: {} % 0.7200000000000001
+    The theorem infectie(respirator) is TRUE!
+    infectie(respirator) % 0.7200000000000001 este un fapt
+      Incercam diagnostic(viroza): simptom(stareProasta) % 0.5
+        simptom(stareProasta) % 0.7 este un fapt
+        Solutie: {} % 0.35
+      Incercam diagnostic(viroza): simptom(febra) % 0.7
+        simptom(febra) % 1.0 este un fapt
+        Solutie: {} % 0.7
+      The theorem diagnostic(viroza) is TRUE!
+      diagnostic(viroza) % 0.8049999999999998 este un fapt
+      Solutie: {} % 0.6480000000000001
+Gata.
+**The theorem diagnosticViroza(respirator) is TRUE! % 0.6480000000000001
+{} % 0.6480000000000001
+
+Scopuri de demonstrat: diagnosticViroza(digestiv)
+  Incercam diagnosticViroza(digestiv): infectie(digestiv), diagnostic(viroza) % 0.9
+    Incercam infectie(digestiv): simptom(durereBurta) % 0.8
+      simptom(durereBurta) % 0.1 este un fapt
+      Solutie: {} % 0.08000000000000002
+    The theorem infectie(digestiv) is TRUE!
+    infectie(digestiv) % 0.08000000000000002 este un fapt
+      Incercam diagnostic(viroza): simptom(stareProasta) % 0.5
+        simptom(stareProasta) % 0.7 este un fapt
+        Solutie: {} % 0.35
+      Incercam diagnostic(viroza): simptom(febra) % 0.7
+        simptom(febra) % 1.0 este un fapt
+        Solutie: {} % 0.7
+      The theorem diagnostic(viroza) is TRUE!
+      diagnostic(viroza) % 0.8049999999999998 este un fapt
+      Solutie: {} % 0.07200000000000002
+Gata.
+**The theorem diagnosticViroza(digestiv) is TRUE! % 0.07200000000000002
+{} % 0.07200000000000002
+
+Scopuri de demonstrat: diagnosticViroza(nervos)
+  Incercam diagnosticViroza(nervos): infectie(nervos), diagnostic(viroza) % 0.9
+    Incercam infectie(nervos): simptom(tulburariOculare) % 0.8
+      The theorem simptom(tulburariOculare) is FALSE!
+    The theorem infectie(nervos) is FALSE!
+Gata.
+**The theorem diagnosticViroza(nervos) is FALSE!
+

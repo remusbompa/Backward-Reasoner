@@ -1,0 +1,117 @@
+List facts:
+['Yesterday(Monday, Sunday)', 'Yesterday(Tuesday, Monday)', 'Yesterday(Wednesday, Tuesday)', 'Yesterday(Thursday, Wednesday)', 'Yesterday(Friday, Thursday)', 'Yesterday(Saturday, Friday)', 'Yesterday(Sunday, Saturday)', 'True(Lion, Thursday)', 'True(Lion, Friday)', 'True(Lion, Saturday)', 'True(Lion, Sunday)', 'True(Unicorn, Monday)', 'True(Unicorn, Tuesday)', 'True(Unicorn, Wednesday)', 'True(Unicorn, Sunday)', 'Lies(Lion, Monday)', 'Lies(Lion, Tuesday)', 'Lies(Lion, Wednesday)', 'Lies(Unicorn, Thursday)', 'Lies(Unicorn, Friday)', 'Lies(Unicorn, Saturday)']
+
+List rules:
+['(V ~Lies(?animal, ?day) ~Yesterday(?day, ?yesterday) ~True(?animal, ?yesterday) IWasLyingYesterday(?animal, ?day))', '(V ~True(?animal, ?day) ~Yesterday(?day, ?yesterday) ~Lies(?animal, ?yesterday) IWasLyingYesterday(?animal, ?day))', '(V ~IWasLyingYesterday(Lion, ?day) ~IWasLyingYesterday(Unicorn, ?day) Today(?day))']
+
+List queries:
+['Today(?day)', 'IWasLyingYesterday(?animal, ?day)']
+
+
+Scopuri de demonstrat: Today(?day)
+  Incercam Today(?day): IWasLyingYesterday(Lion, ?day), IWasLyingYesterday(Unicorn, ?day) % 1.0
+    Incercam IWasLyingYesterday(Lion, ?day): Lies(Lion, ?day), Yesterday(?day, ?yesterday), True(Lion, ?yesterday) % 1.0
+      Lies(Lion, Monday) % 1.0 este un fapt
+        Yesterday(Monday, Sunday) % 1.0 este un fapt
+          True(Lion, Sunday) % 1.0 este un fapt
+          Solutie: ?day: Monday, ?yesterday: Sunday % 1.0
+      Lies(Lion, Tuesday) % 1.0 este un fapt
+        Yesterday(Tuesday, Monday) % 1.0 este un fapt
+          The theorem True(Lion, Monday) is FALSE!
+      Lies(Lion, Wednesday) % 1.0 este un fapt
+        Yesterday(Wednesday, Tuesday) % 1.0 este un fapt
+          The theorem True(Lion, Tuesday) is FALSE!
+    Incercam IWasLyingYesterday(Lion, ?day): True(Lion, ?day), Yesterday(?day, ?yesterday), Lies(Lion, ?yesterday) % 1.0
+      True(Lion, Thursday) % 1.0 este un fapt
+        Yesterday(Thursday, Wednesday) % 1.0 este un fapt
+          Lies(Lion, Wednesday) % 1.0 este un fapt
+          Solutie: ?day: Thursday, ?yesterday: Wednesday % 1.0
+      True(Lion, Friday) % 1.0 este un fapt
+        Yesterday(Friday, Thursday) % 1.0 este un fapt
+          The theorem Lies(Lion, Thursday) is FALSE!
+      True(Lion, Saturday) % 1.0 este un fapt
+        Yesterday(Saturday, Friday) % 1.0 este un fapt
+          The theorem Lies(Lion, Friday) is FALSE!
+      True(Lion, Sunday) % 1.0 este un fapt
+        Yesterday(Sunday, Saturday) % 1.0 este un fapt
+          The theorem Lies(Lion, Saturday) is FALSE!
+    The theorem IWasLyingYesterday(Lion, ?day) is TRUE!
+    IWasLyingYesterday(Lion, Monday) % 1.0 este un fapt
+      Incercam IWasLyingYesterday(Unicorn, Monday): Lies(Unicorn, Monday), Yesterday(Monday, ?yesterday), True(Unicorn, ?yesterday) % 1.0
+        The theorem Lies(Unicorn, Monday) is FALSE!
+      Incercam IWasLyingYesterday(Unicorn, Monday): True(Unicorn, Monday), Yesterday(Monday, ?yesterday), Lies(Unicorn, ?yesterday) % 1.0
+        True(Unicorn, Monday) % 1.0 este un fapt
+          Yesterday(Monday, Sunday) % 1.0 este un fapt
+            The theorem Lies(Unicorn, Sunday) is FALSE!
+      The theorem IWasLyingYesterday(Unicorn, Monday) is FALSE!
+    IWasLyingYesterday(Lion, Thursday) % 1.0 este un fapt
+      Incercam IWasLyingYesterday(Unicorn, Thursday): Lies(Unicorn, Thursday), Yesterday(Thursday, ?yesterday), True(Unicorn, ?yesterday) % 1.0
+        Lies(Unicorn, Thursday) % 1.0 este un fapt
+          Yesterday(Thursday, Wednesday) % 1.0 este un fapt
+            True(Unicorn, Wednesday) % 1.0 este un fapt
+            Solutie: ?yesterday: Wednesday % 1.0
+      Incercam IWasLyingYesterday(Unicorn, Thursday): True(Unicorn, Thursday), Yesterday(Thursday, ?yesterday), Lies(Unicorn, ?yesterday) % 1.0
+        The theorem True(Unicorn, Thursday) is FALSE!
+      The theorem IWasLyingYesterday(Unicorn, Thursday) is TRUE!
+      IWasLyingYesterday(Unicorn, Thursday) % 1.0 este un fapt
+      Solutie: ?day: Thursday % 1.0
+Gata.
+**The theorem Today(?day) is TRUE! % 1.0
+?day: Thursday % 1.0
+
+Scopuri de demonstrat: IWasLyingYesterday(?animal, ?day)
+  Incercam IWasLyingYesterday(?animal, ?day): Lies(?animal, ?day), Yesterday(?day, ?yesterday), True(?animal, ?yesterday) % 1.0
+    Lies(Lion, Monday) % 1.0 este un fapt
+      Yesterday(Monday, Sunday) % 1.0 este un fapt
+        True(Lion, Sunday) % 1.0 este un fapt
+        Solutie: ?animal: Lion, ?day: Monday, ?yesterday: Sunday % 1.0
+    Lies(Lion, Tuesday) % 1.0 este un fapt
+      Yesterday(Tuesday, Monday) % 1.0 este un fapt
+        The theorem True(Lion, Monday) is FALSE!
+    Lies(Lion, Wednesday) % 1.0 este un fapt
+      Yesterday(Wednesday, Tuesday) % 1.0 este un fapt
+        The theorem True(Lion, Tuesday) is FALSE!
+    Lies(Unicorn, Thursday) % 1.0 este un fapt
+      Yesterday(Thursday, Wednesday) % 1.0 este un fapt
+        True(Unicorn, Wednesday) % 1.0 este un fapt
+        Solutie: ?animal: Unicorn, ?day: Thursday, ?yesterday: Wednesday % 1.0
+    Lies(Unicorn, Friday) % 1.0 este un fapt
+      Yesterday(Friday, Thursday) % 1.0 este un fapt
+        The theorem True(Unicorn, Thursday) is FALSE!
+    Lies(Unicorn, Saturday) % 1.0 este un fapt
+      Yesterday(Saturday, Friday) % 1.0 este un fapt
+        The theorem True(Unicorn, Friday) is FALSE!
+  Incercam IWasLyingYesterday(?animal, ?day): True(?animal, ?day), Yesterday(?day, ?yesterday), Lies(?animal, ?yesterday) % 1.0
+    True(Lion, Thursday) % 1.0 este un fapt
+      Yesterday(Thursday, Wednesday) % 1.0 este un fapt
+        Lies(Lion, Wednesday) % 1.0 este un fapt
+        Solutie: ?animal: Lion, ?day: Thursday, ?yesterday: Wednesday % 1.0
+    True(Lion, Friday) % 1.0 este un fapt
+      Yesterday(Friday, Thursday) % 1.0 este un fapt
+        The theorem Lies(Lion, Thursday) is FALSE!
+    True(Lion, Saturday) % 1.0 este un fapt
+      Yesterday(Saturday, Friday) % 1.0 este un fapt
+        The theorem Lies(Lion, Friday) is FALSE!
+    True(Lion, Sunday) % 1.0 este un fapt
+      Yesterday(Sunday, Saturday) % 1.0 este un fapt
+        The theorem Lies(Lion, Saturday) is FALSE!
+    True(Unicorn, Monday) % 1.0 este un fapt
+      Yesterday(Monday, Sunday) % 1.0 este un fapt
+        The theorem Lies(Unicorn, Sunday) is FALSE!
+    True(Unicorn, Tuesday) % 1.0 este un fapt
+      Yesterday(Tuesday, Monday) % 1.0 este un fapt
+        The theorem Lies(Unicorn, Monday) is FALSE!
+    True(Unicorn, Wednesday) % 1.0 este un fapt
+      Yesterday(Wednesday, Tuesday) % 1.0 este un fapt
+        The theorem Lies(Unicorn, Tuesday) is FALSE!
+    True(Unicorn, Sunday) % 1.0 este un fapt
+      Yesterday(Sunday, Saturday) % 1.0 este un fapt
+        Lies(Unicorn, Saturday) % 1.0 este un fapt
+        Solutie: ?animal: Unicorn, ?day: Sunday, ?yesterday: Saturday % 1.0
+Gata.
+**The theorem IWasLyingYesterday(?animal, ?day) is TRUE! % 1.0
+?animal: Lion, ?day: Monday % 1.0
+?animal: Unicorn, ?day: Thursday % 1.0
+?animal: Lion, ?day: Thursday % 1.0
+?animal: Unicorn, ?day: Sunday % 1.0
+

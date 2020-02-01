@@ -1,0 +1,74 @@
+List facts:
+['Calitate(Texaco, Buna)', 'Finantator(FuriosSiIute, Gigel)', 'Finantator(SteauaNordului, Becali)', 'FolosesteCombustibil(FuriosSiIute, Shell)', 'Combustibil(Texaco)', 'Combustibil(Shell)', 'Generos(Becali)', 'EchipaCursa(SteauaNordului)', 'EchipaCursa(FuriosSiIute)', 'Zgarcit(Gigel)']
+
+List rules:
+['(V ~EchipaCursa(?echipa) ~Combustibil(?combustibil) ~FolosesteCombustibil(?echipa, ?combustibil) ~Calitate(?combustibil, Buna) CastigaCursa(?echipa))', '(V ~EchipaCursa(?echipa) ~Combustibil(?combustibil) ~FolosesteCombustibil(?echipa, ?combustibil) ~Calitate(?combustibil, Proasta) PierdeCursa(?echipa))', '(V ~Finantator(?echipa, ?finantator) ~CumparaCombustibil(?finantator, ?combustibil) FolosesteCombustibil(?echipa, ?combustibil))', '(V ~Generos(?finantator) ~Combustibil(?combustibil) ~Calitate(?combustibil, Buna) CumparaCombustibil(?finantator, ?combustibil))', '(V ~Combustibil(?combustibil) ~IndoitCuApa(?combustibil) Calitate(?combustibil, Proasta))', '(V ~FolosesteCombustibil(?echipa, ?combustibil) ~SubFinantata(?echipa) IndoitCuApa(?combustibil))', '(V ~Finantator(?echipa, ?finantator) ~Zgarcit(?finantator) SubFinantata(?echipa))']
+
+List queries:
+['CastigaCursa(SteauaNordului)', 'PierdeCursa(FuriosSiIute)']
+
+
+Scopuri de demonstrat: CastigaCursa(SteauaNordului)
+  Incercam CastigaCursa(SteauaNordului): EchipaCursa(SteauaNordului), Combustibil(?combustibil), FolosesteCombustibil(SteauaNordului, ?combustibil), Calitate(?combustibil, Buna) % 1.0
+    EchipaCursa(SteauaNordului) % 1.0 este un fapt
+      Combustibil(Texaco) % 1.0 este un fapt
+        Incercam FolosesteCombustibil(SteauaNordului, Texaco): Finantator(SteauaNordului, ?finantator), CumparaCombustibil(?finantator, Texaco) % 1.0
+          Finantator(SteauaNordului, Becali) % 1.0 este un fapt
+            Incercam CumparaCombustibil(Becali, Texaco): Generos(Becali), Combustibil(Texaco), Calitate(Texaco, Buna) % 1.0
+              Generos(Becali) % 1.0 este un fapt
+                Combustibil(Texaco) % 1.0 este un fapt
+                  Calitate(Texaco, Buna) % 1.0 este un fapt
+                  Solutie: {} % 1.0
+            The theorem CumparaCombustibil(Becali, Texaco) is TRUE!
+            CumparaCombustibil(Becali, Texaco) % 1.0 este un fapt
+            Solutie: ?finantator: Becali % 1.0
+        The theorem FolosesteCombustibil(SteauaNordului, Texaco) is TRUE!
+        FolosesteCombustibil(SteauaNordului, Texaco) % 1.0 este un fapt
+          Calitate(Texaco, Buna) % 1.0 este un fapt
+          Solutie: ?combustibil: Texaco % 1.0
+      Combustibil(Shell) % 1.0 este un fapt
+        Incercam FolosesteCombustibil(SteauaNordului, Shell): Finantator(SteauaNordului, ?finantator), CumparaCombustibil(?finantator, Shell) % 1.0
+          Finantator(SteauaNordului, Becali) % 1.0 este un fapt
+            Incercam CumparaCombustibil(Becali, Shell): Generos(Becali), Combustibil(Shell), Calitate(Shell, Buna) % 1.0
+              Generos(Becali) % 1.0 este un fapt
+                Combustibil(Shell) % 1.0 este un fapt
+                  The theorem Calitate(Shell, Buna) is FALSE!
+            The theorem CumparaCombustibil(Becali, Shell) is FALSE!
+        The theorem FolosesteCombustibil(SteauaNordului, Shell) is FALSE!
+Gata.
+**The theorem CastigaCursa(SteauaNordului) is TRUE! % 1.0
+{} % 1.0
+
+Scopuri de demonstrat: PierdeCursa(FuriosSiIute)
+  Incercam PierdeCursa(FuriosSiIute): EchipaCursa(FuriosSiIute), Combustibil(?combustibil), FolosesteCombustibil(FuriosSiIute, ?combustibil), Calitate(?combustibil, Proasta) % 1.0
+    EchipaCursa(FuriosSiIute) % 1.0 este un fapt
+      Combustibil(Texaco) % 1.0 este un fapt
+        Incercam FolosesteCombustibil(FuriosSiIute, Texaco): Finantator(FuriosSiIute, ?finantator), CumparaCombustibil(?finantator, Texaco) % 1.0
+          Finantator(FuriosSiIute, Gigel) % 1.0 este un fapt
+            Incercam CumparaCombustibil(Gigel, Texaco): Generos(Gigel), Combustibil(Texaco), Calitate(Texaco, Buna) % 1.0
+              The theorem Generos(Gigel) is FALSE!
+            The theorem CumparaCombustibil(Gigel, Texaco) is FALSE!
+        The theorem FolosesteCombustibil(FuriosSiIute, Texaco) is FALSE!
+      Combustibil(Shell) % 1.0 este un fapt
+        FolosesteCombustibil(FuriosSiIute, Shell) % 1.0 este un fapt
+          Incercam Calitate(Shell, Proasta): Combustibil(Shell), IndoitCuApa(Shell) % 1.0
+            Combustibil(Shell) % 1.0 este un fapt
+              Incercam IndoitCuApa(Shell): FolosesteCombustibil(?echipa, Shell), SubFinantata(?echipa) % 1.0
+                FolosesteCombustibil(FuriosSiIute, Shell) % 1.0 este un fapt
+                  Incercam SubFinantata(FuriosSiIute): Finantator(FuriosSiIute, ?finantator), Zgarcit(?finantator) % 1.0
+                    Finantator(FuriosSiIute, Gigel) % 1.0 este un fapt
+                      Zgarcit(Gigel) % 1.0 este un fapt
+                      Solutie: ?finantator: Gigel % 1.0
+                  The theorem SubFinantata(FuriosSiIute) is TRUE!
+                  SubFinantata(FuriosSiIute) % 1.0 este un fapt
+                  Solutie: ?echipa: FuriosSiIute % 1.0
+              The theorem IndoitCuApa(Shell) is TRUE!
+              IndoitCuApa(Shell) % 1.0 este un fapt
+              Solutie: {} % 1.0
+          The theorem Calitate(Shell, Proasta) is TRUE!
+          Calitate(Shell, Proasta) % 1.0 este un fapt
+          Solutie: ?combustibil: Shell % 1.0
+Gata.
+**The theorem PierdeCursa(FuriosSiIute) is TRUE! % 1.0
+{} % 1.0
+

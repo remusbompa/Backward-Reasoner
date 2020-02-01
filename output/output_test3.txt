@@ -1,0 +1,67 @@
+List facts:
+['Sef(Ionel)', 'Sef(Marcel)', 'Sef(Polo)', 'LucreazaPentru(Marco, Polo)', 'LucreazaPentru(Mirciut, Marcel)', 'LucreazaPentru(Nectarie, Ionel)', 'MuncaPlictisitoare(ImpinsBolovani)', 'MuncaPlictisitoare(SpartNuci)', 'MuncaPlictisitoare(TaiatFrunza)', 'Angajat(Nectarie)', 'Angajat(Mirciut)', 'Angajat(Marco)', 'LucreazaLa(Nectarie, ImpinsBolovani)', 'LucreazaLa(Mirciut, SpartNuci)']
+
+List rules:
+['(V ~Sef(?sef) ~Angajat(?angajat) ~LucreazaPentru(?angajat, ?sef) ~NonSarguincios(?angajat) NuPromoveaza(?sef, ?angajat))', '(V ~UsorDistras(?angajat) NonSarguincios(?angajat))', '(V ~LucreazaLa(?angajat, ?munca) ~MuncaPlictisitoare(?munca) UsorDistras(?angajat))']
+
+List queries:
+['NuPromoveaza(Ionel, Nectarie)', 'NuPromoveaza(Marcel, ?cineva)', 'NuPromoveaza(Polo, Marco)']
+
+
+Scopuri de demonstrat: NuPromoveaza(Ionel, Nectarie)
+  Incercam NuPromoveaza(Ionel, Nectarie): Sef(Ionel), Angajat(Nectarie), LucreazaPentru(Nectarie, Ionel), NonSarguincios(Nectarie) % 1.0
+    Sef(Ionel) % 1.0 este un fapt
+      Angajat(Nectarie) % 1.0 este un fapt
+        LucreazaPentru(Nectarie, Ionel) % 1.0 este un fapt
+          Incercam NonSarguincios(Nectarie): UsorDistras(Nectarie) % 1.0
+            Incercam UsorDistras(Nectarie): LucreazaLa(Nectarie, ?munca), MuncaPlictisitoare(?munca) % 1.0
+              LucreazaLa(Nectarie, ImpinsBolovani) % 1.0 este un fapt
+                MuncaPlictisitoare(ImpinsBolovani) % 1.0 este un fapt
+                Solutie: ?munca: ImpinsBolovani % 1.0
+            The theorem UsorDistras(Nectarie) is TRUE!
+            UsorDistras(Nectarie) % 1.0 este un fapt
+            Solutie: {} % 1.0
+          The theorem NonSarguincios(Nectarie) is TRUE!
+          NonSarguincios(Nectarie) % 1.0 este un fapt
+          Solutie: {} % 1.0
+Gata.
+**The theorem NuPromoveaza(Ionel, Nectarie) is TRUE! % 1.0
+{} % 1.0
+
+Scopuri de demonstrat: NuPromoveaza(Marcel, ?cineva)
+  Incercam NuPromoveaza(Marcel, ?cineva): Sef(Marcel), Angajat(?cineva), LucreazaPentru(?cineva, Marcel), NonSarguincios(?cineva) % 1.0
+    Sef(Marcel) % 1.0 este un fapt
+      Angajat(Nectarie) % 1.0 este un fapt
+        The theorem LucreazaPentru(Nectarie, Marcel) is FALSE!
+      Angajat(Mirciut) % 1.0 este un fapt
+        LucreazaPentru(Mirciut, Marcel) % 1.0 este un fapt
+          Incercam NonSarguincios(Mirciut): UsorDistras(Mirciut) % 1.0
+            Incercam UsorDistras(Mirciut): LucreazaLa(Mirciut, ?munca), MuncaPlictisitoare(?munca) % 1.0
+              LucreazaLa(Mirciut, SpartNuci) % 1.0 este un fapt
+                MuncaPlictisitoare(SpartNuci) % 1.0 este un fapt
+                Solutie: ?munca: SpartNuci % 1.0
+            The theorem UsorDistras(Mirciut) is TRUE!
+            UsorDistras(Mirciut) % 1.0 este un fapt
+            Solutie: {} % 1.0
+          The theorem NonSarguincios(Mirciut) is TRUE!
+          NonSarguincios(Mirciut) % 1.0 este un fapt
+          Solutie: ?cineva: Mirciut % 1.0
+      Angajat(Marco) % 1.0 este un fapt
+        The theorem LucreazaPentru(Marco, Marcel) is FALSE!
+Gata.
+**The theorem NuPromoveaza(Marcel, ?cineva) is TRUE! % 1.0
+?cineva: Mirciut % 1.0
+
+Scopuri de demonstrat: NuPromoveaza(Polo, Marco)
+  Incercam NuPromoveaza(Polo, Marco): Sef(Polo), Angajat(Marco), LucreazaPentru(Marco, Polo), NonSarguincios(Marco) % 1.0
+    Sef(Polo) % 1.0 este un fapt
+      Angajat(Marco) % 1.0 este un fapt
+        LucreazaPentru(Marco, Polo) % 1.0 este un fapt
+          Incercam NonSarguincios(Marco): UsorDistras(Marco) % 1.0
+            Incercam UsorDistras(Marco): LucreazaLa(Marco, ?munca), MuncaPlictisitoare(?munca) % 1.0
+              The theorem LucreazaLa(Marco, ?munca) is FALSE!
+            The theorem UsorDistras(Marco) is FALSE!
+          The theorem NonSarguincios(Marco) is FALSE!
+Gata.
+**The theorem NuPromoveaza(Polo, Marco) is FALSE!
+
